@@ -205,3 +205,36 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# =========================
+# PROJECT-SPECIFIC IGNORES
+# =========================
+
+# API keys and sensitive config
+*.env
+.env.*
+*.key
+*.pem
+*.p12
+*.crt
+
+# GCP / BigQuery credentials
+*.json
+
+# Local raw data from ingestion
+_local_raw/
+raw_data/
+*.csv
+*.parquet
+*.jsonl
+
+# dbt / Dataform compiled outputs
+target/
+dbt_packages/
+.dataform/
+
+# Local logs and caches
+logs/
+*.log
+.cache/
+
